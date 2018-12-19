@@ -145,8 +145,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					<horizontal>
 						<samples>32</samples>
 						<resolution>1</resolution>
-						<min_angle>-0.53529248</min_angle>
-						<max_angle>0.18622663</max_angle>
+						<min_angle>-1.5</min_angle>
+						<max_angle>1.5</max_angle>
 					</horizontal>
 				</scan>
 				<range>

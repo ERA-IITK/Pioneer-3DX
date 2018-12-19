@@ -292,8 +292,10 @@ work original in ucs-ros-pkg.
             <horizontal>
               <samples>32</samples>
               <resolution>1</resolution>
-              <min_angle>-0.53529248</min_angle>
-              <max_angle>0.18622663</max_angle>
+<!--              <min_angle>-0.53529248</min_angle>
+              <max_angle>0.18622663</max_angle>-->
+			  <min_angle>-0.5</min_angle>
+              <max_angle>0.5</max_angle>
             </horizontal>
           </scan>
 
@@ -317,10 +319,23 @@ work original in ucs-ros-pkg.
 
 	<joint name="lidar_joint1" type="fixed">
 		<axis xyz="0 1 0" />
-		<origin xyz="0 0 0.05" rpy="0 0 0" />
+		<origin xyz="0 0 0.2" rpy="0 0 0" />
 		<parent link="top_plate" />
 		<child link="lidartop" />
 	</joint>
+
+	<!--<joint type="fixed" name="joint">
+      <pose>0 0 5 0 0 0</pose>
+      <parent>lidarbase</parent>
+      <child>lidartop</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+      </axis>
+    </joint>-->
 
 
 </robot>
